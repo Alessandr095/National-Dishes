@@ -13,7 +13,7 @@ body{
 /* Style of the whole game area*/
 .game-area{
     background: #ede5ce;
-    width: 100%;
+    width: 80%;
     max-width: 1000px;
     margin: 100px auto 0;
     border-radius: 50px;
@@ -24,7 +24,6 @@ body{
     font-size: 50px;
     color: #000000;
     font-weight: 800;
-    border-bottom: 2px solid #000000;
     padding-bottom: 30px;
 }
 
@@ -36,4 +35,34 @@ body{
     font-size: 30px;
     color: #000000;
     font-weight: 800;
+}
+/* answer buttons style*/
+.btn{
+    background: #ede5ce;
+    color: #000000;
+    font-weight: 600;
+    width: 100%;
+    border: 2px solid #000000;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: left;
+    border-radius: 8px;
+}
+/* hover effect*/
+.btn:hover{
+    background: #000000;
+    color: #ede5ce;
+}
+/* next question button style*/
+#next-btn{
+    background: #000000;
+    color: #ede5ce;
+    font-weight: 500;
+    width: 200px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    
+
 }
