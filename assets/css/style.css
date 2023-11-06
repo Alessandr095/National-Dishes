@@ -1,0 +1,12 @@
+/* Astrisk wildcard selector to overide default styles*/
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+/* Changes colour of page background*/
+body{
+    background: #004225;
+}
