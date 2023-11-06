@@ -103,12 +103,20 @@ let score = 0; // variable for score to hold the value of 0
  * a function that when the quiz starts the score with be set to 0
  */
 function startQuiz(){
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next"
+    showQuestion();
 
 }
 /**
  * a function that replaces the placeholder text for in the question variable
  */
-function showQuestions(){
+function showQuestion(){
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNumber = currentQuestionIndex +1;
+    questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
 }
 /**
