@@ -2,6 +2,7 @@
 const questions = [
     {
         question: "This is Kabuli pulao, what Country is this from?",
+        image: "assets/images/kabuli.webp",
         answers: [
             { text: "South Africa", correct: false },
             { text: "Afghanistan", correct: true },
@@ -11,6 +12,7 @@ const questions = [
     },
     {
         question: "This is Feijoada, what Country is this from?",
+        image: "assets/images/feijaoda.webp",
         answers: [
             { text: "Thailand", correct: false },
             { text: "Spain", correct: false },
@@ -20,7 +22,7 @@ const questions = [
     },
     {
         question: "This is Poutine, what Country is this from?",
-
+        image: "assets/images/poutine.webp",
         answers: [
             { text: "Colombia", correct: false },
             { text: "China", correct: false },
@@ -30,6 +32,7 @@ const questions = [
     },
     {
         question: "This is Moambe chicken, what Country is this from?",
+        image: "assets/images/chicken.webp",
         answers: [
             { text: "Zambia", correct: false },
             { text: "Namibia", correct: false },
@@ -39,6 +42,7 @@ const questions = [
     },
     {
         question: "This is Stegt flæsk, what Country is this from?",
+        image: "assets/images/stegt.webp",
         answers: [
             { text: "Norway", correct: false },
             { text: "Iceland", correct: false },
@@ -48,6 +52,7 @@ const questions = [
     },
     {
         question: "This is Nshima, what Country is this from?",
+        image: "assets/images/nshima.webp",
         answers: [
             { text: "Kenya", correct: false },
             { text: "Zambia", correct: true },
@@ -57,6 +62,7 @@ const questions = [
     },
     {
         question: "This is Ful medames, what Country is this from?",
+        image: "assets/images/fulmedames.webp",
         answers: [
             { text: "France", correct: false },
             { text: "Egypt", correct: true },
@@ -66,6 +72,7 @@ const questions = [
     },
     {
         question: "This is Bobotie, what Country is this from?",
+        image: "assets/images/bobotie.webp",
         answers: [
             { text: "South Africa", correct: true },
             { text: "Netherlands", correct: false },
@@ -75,6 +82,7 @@ const questions = [
     },
     {
         question: "This is Cawl, what Country is this from?",
+        image: "assets/images/cawl.webp",
         answers: [
             { text: "Ireland", correct: false },
             { text: "Scotland", correct: false },
@@ -84,6 +92,7 @@ const questions = [
     },
     {
         question: "This is Ceviche, what Country is this from?",
+        image: "assets/images/ceviche.webp",
         answers: [
             { text: "Colombia", correct: false },
             { text: "Peru", correct: true },
