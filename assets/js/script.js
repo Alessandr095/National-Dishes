@@ -94,7 +94,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question"); //variable for the question title, for the a later function to replace the place holder text with the question text
-const answerButtons = document.getElementById('answer-buttons'); // variable for the answer buttons, for the later function to replace the place holder text with the answer buttons text 
+const answerButtons = document.getElementById("answer-buttons"); // variable for the answer buttons, for the later function to replace the place holder text with the answer buttons text 
 const nextButton = document.getElementById("next-btn");// variable for the next button, for a later function of replacing the place holder next button to only appear after a answer button is clicked
 
 let currentQuestionIndex = 0; // variable for current question
@@ -152,12 +152,13 @@ function selectAnswer(event){
         score++; // incriments score if correct
     } else {
         selectedBtn.classList.add("incorrect");// if not correct changes button colour
-    }
+    } 
+    // stops user from selecting other answers after an answer has been selected
     Array.from(answerButtons.children).forEach(button => {
         if(button.dataset.correct === "true") {
             button.classList.add("correct");
         } 
-        button.Disabled = true;
+        button.disabled = true;
     })
     nextButton.style.display = "block";
 
@@ -184,13 +185,15 @@ function handleNextButton(){
     }
 }
 // event listener if next button gets clicked and its the end of the quiz restart quiz
-nextButton.addEventListener("click", () => {
+nextButton.addEventListener("click",() => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startQuiz();
     }
 });
+
+startQuiz();
 
 
     
