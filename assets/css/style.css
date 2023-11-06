@@ -70,7 +70,7 @@ body{
     cursor: pointer;
     display: none;
 }
-
+/* style for changing the colours of the answers to correct or incorrect green/red */
 .correct{
     background: #9aeabc;
 }
