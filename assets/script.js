@@ -134,13 +134,24 @@ function resetState(){
  * an if statement that checks if the answer clicked is correct or incorrect
  */
 function selectAnswer(){
+    const selectedBtn = event.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect){
+        selectedBtn.classList.add("correct")// class added later for colour change in answer button
+        score++; // incriments score if correct
+    } else {
+        selectedBtn.classList.add("incorrect");// if not correct changes button colour
+    }
 
 }
 /**
  * a function to show the score at the end of the game with a value out of 10
  */
 function showScore(){
-
+    resetState()
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again"// replaces next button at end of quiz
+    nextButton.style.display = "block" //hides next button
 }
 /**
  * a function that make the next button functional to cycle through the 10 questions
