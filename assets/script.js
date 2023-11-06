@@ -94,7 +94,7 @@ const questions = [
 ];
 
 const questionElement = document.getElementById("question"); //variable for the question title, for the a later function to replace the place holder text with the question text
-const answerButton = document.getElementById('answer-buttons'); // variable for the answer buttons, for the later function to replace the place holder text with the answer buttons text 
+const answerButtons = document.getElementById('answer-buttons'); // variable for the answer buttons, for the later function to replace the place holder text with the answer buttons text 
 const nextButton = document.getElementById("next-btn");// variable for the next button, for a later function of replacing the place holder next button to only appear after a answer button is clicked
 
 let currentQuestionIndex = 0; // variable for current question
@@ -121,10 +121,13 @@ function showQuestion(){
 }
 /**
  * a function to remove the next button place holder 
- * and removed it form view until an answer button is clicked
+ * and removed it from view until an answer button is clicked
  */
 function resetState(){
-
+    nextButton.style.display = "none"
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
 }
 /**
  * a function with variables to replace the place holder text for the answer buttons and 
