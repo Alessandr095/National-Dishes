@@ -155,10 +155,24 @@ function showScore(){
 }
 /**
  * a function that make the next button functional to cycle through the 10 questions
+ * and if at the end of the 10 questions show score rather than cycle to another question
  */
 function handleNextButton(){
-
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    } else {
+        showScore();
+    }
 }
+// event listener if next button gets clicked and its the end of the quiz restart quiz
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
+        handleNextButton();
+    } else {
+        startQuiz();
+    }
+});
 
 
     
