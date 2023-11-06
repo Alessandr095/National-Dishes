@@ -153,6 +153,13 @@ function selectAnswer(event){
     } else {
         selectedBtn.classList.add("incorrect");// if not correct changes button colour
     }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true") {
+            button.classList.add("correct");
+        } 
+        button.Disabled = true;
+    })
+    nextButton.style.display = "block";
 
 }
 /**
