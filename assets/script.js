@@ -118,6 +118,17 @@ function showQuestion(){
     let questionNumber = currentQuestionIndex +1;
     questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+
 }
 /**
  * a function to remove the next button place holder 
@@ -133,7 +144,7 @@ function resetState(){
  * a function with variables to replace the place holder text for the answer buttons and 
  * an if statement that checks if the answer clicked is correct or incorrect
  */
-function selectAnswer(){
+function selectAnswer(event){
     const selectedBtn = event.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
