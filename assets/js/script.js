@@ -10,8 +10,6 @@ const questions = baseQuestions.sort(() => Math.random() - 0.5) //variable for q
 let currentQuestionIndex = 0; // variable for current question
 let score = 0; // variable for score to hold the value of 0
 
-
-
 /**
  * a function that when the quiz starts the score with be set to 0
  */
@@ -89,6 +87,7 @@ function showScore(){
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again"// replaces next button at end of quiz
     nextButton.style.display = "block" //hides next button
+
 }
 /**
  * a function that make the next button functional to cycle through the 10 questions
