@@ -1,3 +1,4 @@
+
 const image = document.getElementById("qimage");
 const questionElement = document.getElementById("question"); //variable for the question title, for the a later function to replace the place holder text with the question text
 const answerButtons = document.getElementById("answer-buttons"); // variable for the answer buttons, for the later function to replace the place holder text with the answer buttons text 
@@ -21,11 +22,15 @@ function startQuiz(){
  */
 function showQuestion(){
     resetState();
+    qimage.style = "display: block"; // reverts images back when play again is clicked and calls show question function
     let currentQuestion = questions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex +1;
     questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
-
-    currentQuestion.answers.forEach(answer => {
+    image.src = currentQuestion.image// adds the image source to the specific question 
+    
+    currentQuestion.answers
+    .sort(() => Math.random() - 0.5)
+    .forEach((answer) => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
@@ -75,6 +80,7 @@ function selectAnswer(event){
  */
 function showScore(){
     resetState()
+    qimage.style = "display: none";
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again"// replaces next button at end of quiz
     nextButton.style.display = "block" //hides next button
