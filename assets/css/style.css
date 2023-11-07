@@ -53,16 +53,16 @@ body {
 }
 
 #sp {
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
-    padding-left: 150px;
     padding-bottom: 20px;
 }
 
 #inst {
-    text-align: center;
+    text-align: left;
     font-weight: 200;
+    
 }
 
 /* answer buttons style*/
