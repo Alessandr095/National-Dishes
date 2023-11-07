@@ -141,4 +141,8 @@ consistancy throughout the website makes the user navigate with ease.
 ### Credits.
 
 - JavaScript code and how to impliment and question and answer function and general basis on how to create a quiz came from YouYube Channel: GreatStack. Video: <https://www.youtube.com/watch?v=PBcqGxrr9g8>
-- JavaScript understanding and implimentation for randomising the questions and answers and start button came from a family friend, Luke Van
+- JavaScript understanding and implimentation for randomising the questions and answers and start button came from a family friend, Luke Janse Van Rensburg.
+
+### Media.
+
+-All Images was used from pintrest.
