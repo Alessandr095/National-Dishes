@@ -35,15 +35,26 @@ A easy representation of how the basis of JS works, easy to visualise the code f
 
 The colour palette i went with was an off white and british racing green, two colours that compliment but are not too in your face, and give good visability.
 
-### Typography 
+### Typography. 
 
 ![fonts](assets/images/fonts.webp)
 
 I used Oswald, because of it's readability, and that it does not get lost on a white background.
 
-### Wire Frame 
+### Wire Frame.
 
 ![wireframe](assets/images/wire.webp)
 
 consistancy throughout the website makes the user navigate with ease.
 
+## Features.
+
+- Splash page.
+- the splash page is the landing page for the quiz, its give the user brief instructions on how the quiz works and a start button that causes a function of hiding the splash page and taking the user to the quiz page.
+  ![splash](assets/images/splashpage.webp)
+  
+  
+  - The Quiz Page. 
+  - the quiz page consists of randomised question and answers set with functions. it consists of functions that hide the next button, stop the user from being able to click after selecting an answer and sets a style in CCS that shows colour for incorrect or correct answer through an if statement, and tallies up the score through a function that is displayed at the end, in the score page.
+  
+   
