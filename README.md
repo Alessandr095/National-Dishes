@@ -34,3 +34,16 @@ A easy representation of how the basis of JS works, easy to visualise the code f
 ![Palette](assets/images/palette.webp)
 
 The colour palette i went with was an off white and british racing green, two colours that compliment but are not too in your face, and give good visability.
+
+### Typography 
+
+![fonts](assets/images/fonts.webp)
+
+I used Oswald, because of it's readability, and that it does not get lost on a white background.
+
+### Wire Frame 
+
+![wireframe](assets/images/wire.webp)
+
+consistancy throughout the website makes the user navigate with ease.
+
