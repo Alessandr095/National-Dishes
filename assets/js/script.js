@@ -1,12 +1,17 @@
-
-const image = document.getElementById("qimage");
+const startButton = document.getElementById("start-button"); // variable for start button
+const start = document.getElementById("start"); // variable for start screen
+const quiz = document.getElementById("quiz"); // variable to for future funtion to get the quiz section
+const image = document.getElementById("qimage");//variable to add pictures to specific questions
 const questionElement = document.getElementById("question"); //variable for the question title, for the a later function to replace the place holder text with the question text
 const answerButtons = document.getElementById("answer-buttons"); // variable for the answer buttons, for the later function to replace the place holder text with the answer buttons text 
 const nextButton = document.getElementById("next-btn");// variable for the next button, for a later function of replacing the place holder next button to only appear after a answer button is clicked
-
+const questions = baseQuestions.sort(() => Math.random() - 0.5) //variable for question randomiser
 
 let currentQuestionIndex = 0; // variable for current question
 let score = 0; // variable for score to hold the value of 0
+
+
+
 /**
  * a function that when the quiz starts the score with be set to 0
  */
@@ -89,24 +94,34 @@ function showScore(){
  * a function that make the next button functional to cycle through the 10 questions
  * and if at the end of the 10 questions show score rather than cycle to another question
  */
-function handleNextButton(){
+function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
         showScore();
     }
 }
-// event listener if next button gets clicked and its the end of the quiz restart quiz
-nextButton.addEventListener("click",() => {
+//start button event listener for click
+startButton.addEventListener("click", () => {
+    quiz.classList.remove("hidden");
+    start.classList.add("hidden");
+    startQuiz();
+});
+//event listener for next button click
+nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
-        startQuiz();
+        startPage();
     }
 });
+/**
+ * function for start page to be hidden when start is clicked 
+ */
+function startPage() {
+    start.classList.remove("hidden");
+    quiz.classList.add("hidden");
+}
 
-startQuiz();
-
-
-    
+startPage();

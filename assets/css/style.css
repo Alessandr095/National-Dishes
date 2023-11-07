@@ -5,12 +5,14 @@
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
 }
+
 /* Changes colour of page background*/
-body{
+body {
     background: #022918;
 }
+
 /* Style of the whole game area*/
-.game-area{
+.game-area {
     background: #ede5ce;
     width: 80%;
     max-width: 1000px;
@@ -18,33 +20,53 @@ body{
     border-radius: 50px;
     padding: 50px;
 }
+
 /* Game area heading style*/
-.game-area h1{
+.game-area h1 {
     font-size: 50px;
     color: #000000;
     font-weight: 800;
     padding-bottom: 30px;
 }
 
-.quiz{
+.quiz {
     padding: 20px 0;
 }
+
+#start-button {
+    text-align: center;
+}
+
 /*question title style*/
-.quiz h2{
+.quiz h2 {
     font-size: 30px;
     color: #000000;
     font-weight: 800;
 }
+
 #qimage {
     width: 100%;
     height: 400px;
     object-fit: cover;
     padding-bottom: 20px;
-    
+
+}
+
+#sp {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 150px;
+    padding-bottom: 20px;
+}
+
+#inst {
+    text-align: center;
+    font-weight: 200;
 }
 
 /* answer buttons style*/
-.btn{
+.btn {
     background: #ede5ce;
     color: #000000;
     font-weight: 600;
@@ -57,16 +79,23 @@ body{
     cursor: pointer;
     transition: all 0.3s;
 }
+
 /* hover effect*/
-.btn:hover:not([disabled]){
+.btn:hover:not([disabled]) {
     background: #000000;
     color: #ede5ce;
 }
-.btn:disabled{
+
+.btn:disabled {
     cursor: no-drop;
 }
+
+.hidden {
+    display: none;
+}
+
 /* next question button style*/
-#next-btn{
+#next-btn {
     background: #000000;
     color: #ede5ce;
     font-weight: 500;
@@ -78,11 +107,13 @@ body{
     cursor: pointer;
     display: none;
 }
+
 /* style for changing the colours of the answers to correct or incorrect green/red */
-.correct{
+.correct {
     background: #9aeabc;
 }
-.incorrect{
+
+.incorrect {
     background: #ff9393;
 }
 
@@ -92,5 +123,3 @@ body{
     }
 
 }
-
-

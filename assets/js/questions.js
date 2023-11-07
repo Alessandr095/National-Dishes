@@ -1,5 +1,5 @@
 // javascript section of the 10 questions and answers used for the quiz Q/A placeholders
-const questions = [
+const baseQuestions = [
     {
         question: "This is Kabuli pulao, what Country is this from?",
         image: "assets/images/kabuli.webp",

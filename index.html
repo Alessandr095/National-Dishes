@@ -19,9 +19,24 @@
 <body>
     <!--The game area section with place holder for question title and and answer buttons and next button-->
     <div class="game-area">
-        <h1>National Dishes Quiz <i class="fa-solid fa-earth-africa"></i> </h1>
-        <div class="quiz">
-            <img id="qimage" src="">
+        <h1>National Dishes Quiz</h1>
+        <div class="start" id="start"> <!--html for the splash screen with start button-->
+            <img id="sp" src="assets/images/splash image.webp" alt="Image of Humans forming circle">
+            <h2>Test your knowledge in National Dishes</h2>
+            <button id="start-button" class="btn">Start</button>
+            <!-- instructions-->
+            <li>Welcome to the National Dishes Quiz, in this quiz your knowledge will be tested on Countries favourite foods from around the world. </li>
+            <li>It is a multiple choice quiz.</li>
+            <li>You will have the chance to guess the correct answer with 4 options.</li>
+            <li>If correct the answer will light up green, and a next button will appear.</li>
+            <li>There are 10 questions.</li>
+            <li>Goood Luck.</li>
+            <li>Click start to begin.</li>
+            
+            
+        </div>
+        <div class="quiz" id="quiz">
+            <img id="qimage" src="" alt="Images of Food">
             <h2 id="question">Question Title</h2>
             <div id="answer-buttons">
                 <button class="btn">Answer 1</button>
