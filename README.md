@@ -31,3 +31,6 @@ A easy representation of how the basis of JS works, easy to visualise the code f
   
 ### Colour Palette
 
+![Palette](assets/images/palette.webp)
+
+The colour palette i went with was an off white and british racing green, two colours that compliment but are not too in your face, and give good visability.
